@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center the stopwatch container horizontally */
+    align-items: center; /* Center the stopwatch container vertically */
+    height: 100vh;
+    background-image: url(imgclock.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #time{
+    display: flex;
+    flex-direction: column;
+  }
+  h1{
+    text-align: center;
+  }
+  @media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+  
+  .stopwatch-container {
+    text-align: center;
+    background-color: transparent;
+    padding: 70px;
+    border-radius: 10%;
+    border: 5px solid black;
+    box-shadow: 20px 20px 25px 25px hsla(0, 13%, 66%, 0.894);
+    width: 80%; /* Make the container's width relative to screen size */
+    max-width: 500px; /* Limit the maximum width */
+    min-width: 300px; /* Limit the minimum width */
+  }
+  .stopwatch-container:hover{
+    border: 5px solid white;
+    transition: 0.5s ease;
+    
+  }
+  
+  #time-display {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(45, 175, 49);
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .controls button:hover {
+    background-color: #0c5d0c;
+  }
+  
+  .controls button:disabled {
+    background-color: #ccc;
+  }
+  
+  .lap-times {
+    margin-top: 20px;
+  }
+  
+  .lap-times h3 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  }
+  
+  .lap-times ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lap-times li {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  #lap-list {
+    color: white;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Small devices (portrait phones, 600px and below) */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+      margin-left: 0;
+    }
+  
+    .stopwatch-container {
+      padding: 40px; /* Reduce padding for smaller screens */
+      width: 100%; /* Use the full width of the screen */
+    }
+  
+    #time-display {
+      font-size: 2.5rem; /* Reduce font size on small screens */
+    }
+  
+    .controls button {
+      padding: 8px 15px; /* Smaller buttons on small screens */
+      font-size: 0.9rem; /* Adjust font size of buttons */
+    }
+  
+    .lap-times li {
+      font-size: 1.2rem; /* Reduce lap time font size */
+    }
+  }
+  
+  /* Medium devices (landscape phones, 600px to 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      margin-left: 0;
+    }
+  
+    .stopwatch-container {
+      padding: 60px;
+      width: 85%; /* Adjust container width */
+    }
+  
+    #time-display {
+      font-size: 2.8rem; /* Adjust font size for medium devices */
+    }
+  
+    .controls button {
+      padding: 9px 18px; /* Adjust button size */
+      font-size: 1rem;
+    }
+  
+    .lap-times li {
+      font-size: 1.4rem; /* Adjust lap time font size */
+    }
+  }
+  
+  /* Larger devices (desktops, above 1024px) */
+  @media (min-width: 1025px) {
+    body {
+      padding: 0;
+      margin-left: -600px;
+       /* Keep the margin for larger screens */
+    }
+  
+    .stopwatch-container {
+      padding: 70px;
+      width: 400px; /* Keep a fixed width for larger screens */
+    }
+  
+    #time-display {
+      font-size: 3rem;
+    }
+  
+    .controls button {
+      padding: 10px 20px;
+    }
+  
+    .lap-times li {
+      font-size: 1.5rem;
+    }
+  }
+  
