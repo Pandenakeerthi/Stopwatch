@@ -5,7 +5,7 @@ A simple, lightweight stopwatch built with HTML, CSS, and JavaScript. This proje
 
 ## Live Demo
 
-[LIVE DEMO](https://pandenakeerthi.github.io/Stopwatch/)
+[StopWatch LIVE DEMO](https://pandenakeerthi.github.io/Stopwatch/)
 
 ## Features
 
