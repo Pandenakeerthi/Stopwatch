@@ -5,7 +5,7 @@ A simple, lightweight stopwatch built with HTML, CSS, and JavaScript. This proje
 
 ## Live Demo
 
-[StopWatch LIVE DEMO](https://pandenakeerthi.github.io/Stopwatch/)
+STOP WATCH [ LIVE DEMO](https://pandenakeerthi.github.io/Stopwatch/)
 
 ## Features
 
@@ -24,14 +24,4 @@ A simple, lightweight stopwatch built with HTML, CSS, and JavaScript. This proje
 
 Follow these instructions to run the project locally.
 
-### Prerequisites
 
-All you need is a modern web browser (Chrome, Firefox, Edge, etc.). No additional installations are required.
-
-### Installation
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/stopwatch-demo.git
-   cd stopwatch-demo
